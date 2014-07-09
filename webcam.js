@@ -15,6 +15,7 @@
  
   function success(stream){
     var video = document.querySelector("#player");
-    video.src = window.URL.createObjectURL(stream);
+    video.src = window.URL.createObjectURL(stream);  // MediaStream is converted to object URL and passed to the <video/> element
+    window.stream = video;
   }
 })();
